@@ -1,0 +1,4 @@
+#!/bin/sh
+
+ /tmp/packing/scripts/user/install_node_modules
+mkdir /opt/node-red
