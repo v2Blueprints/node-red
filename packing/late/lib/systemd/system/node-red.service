@@ -5,7 +5,7 @@ Documentation=https://nodered.org/
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/node-red --title "^^node-red-title^^" --settings /data/node-red/node_settings.js --userDir /data/node-red/user/
+ExecStart=/usr/bin/node-red --title "^^configuration.node-red-title^^" --settings /data/node-red/node_settings.js --userDir /data/node-red/user/
 ExecReload=/bin/kill -HUP $MAINPID
 Restart=on-failure
 RestartForceExitStatus=SIGPIPE
