@@ -1,10 +1,14 @@
 {
-	"title": "node-red",
-	"description": "node-red",
+	"about": {
+		"title": "node-red",
+		"explanation": "node-red"
+	},
 	"ports": [
-		1880
-	],
-	"binding_anchor": {
+    {
+      "external_port": 1880
+    }
+  ],
+	"binding_target": {
 		"node-red-title": ""
 	},
 	"modules": {
@@ -15,28 +19,35 @@
 	},
 	"volumes": [
 		{
-			"type": "dir",
 			"destination": "/data/",
-			"source": "/var/lib/containers/^^identifier^^/data"
+			"name": "data"
 		}
 	],
 	"bindings": [
 		{
 			"type": "embed",
 			"descriptor": {
-				"repository": "https://github.com/v2Blueprints/enginesd_debian_base"
-			}
-		},
-		{
-			"type": "embed",
-			"descriptor": {
 				"repository": "https://github.com/v2Blueprints/node"
 			}
-		}
-	],
-	"containers": [
-		{
-			"type": "lxd"
-		}
-	]
+		},
+    {
+      "type": "embed",
+      "runtimes": [
+        "lxd"
+      ],
+      "target": {
+        "repository": "https://github.com/v2Blueprints/enginesd_debian_base"
+      }
+    }
+  ],
+  "images": [
+    {
+      "runtimes": [
+        "docker"
+      ],
+      "target": {
+        "repository": "https://github.com/v2Blueprints/enginesd_debian_base"
+      }
+    }
+  ]
 }
