@@ -29,25 +29,6 @@
 			"target": {
 				"repository": "https://github.com/v2Blueprints/node"
 			}
-		},
-    {
-      "type": "embed",
-      "runtimes": [
-        "lxd"
-      ],
-      "target": {
-        "repository": "https://github.com/v2Blueprints/enginesd_debian_base"
-      }
-    }
-  ],
-  "images": [
-    {
-      "runtimes": [
-        "docker"
-      ],
-      "target": {
-        "repository": "https://github.com/v2Blueprints/enginesd_debian_base"
-      }
-    }
+		}
   ]
 }
