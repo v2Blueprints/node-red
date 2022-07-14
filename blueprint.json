@@ -11,7 +11,7 @@
 	"binding_target": {
 		"node-red-title": ""
 	},
-	"modules": {
+	"managed_packages": {
 		"node": [
 			"node-red",
 			"node-red-dashboard"
